@@ -8,8 +8,15 @@
        stampare di nuovo il paragrafo e la sua lunghezza
     */
 
-    $paragraph = 'Per me si va nella città dolente, Per me si va nell’eterno dolore, Per me si va tra la perduta gente.'
+   $paragraph = 'Per me si va nella città dolente, Per me si va nell’eterno dolore della città dolente, Per me si va tra la perduta gente della città dolente.';
 
+   $replacedParagraph = str_replace(
+      $_GET['word'],
+      "***",
+      $paragraph,
+   );
+
+   
 ?>
 
 
@@ -25,6 +32,10 @@
 <body>
    <h1>Titolo</h1>
    <h4>La Divina Commedia - Canto III</h4>
-   <pre><?php var_dump($paragraph)?></pre>
+   <pre>
+      <?php 
+         echo $paragraph;
+      ?>
+   </pre>
 </body>
 </html>
