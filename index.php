@@ -25,6 +25,6 @@
 <body>
    <h1>Titolo</h1>
    <h4>La Divina Commedia - Canto III</h4>
-   <pre>Paragrafo</pre>
+   <pre><?php echo $paragraph?></pre>
 </body>
 </html>
