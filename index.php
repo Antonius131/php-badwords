@@ -34,12 +34,12 @@
    <h4>La Divina Commedia - Canto III</h4>
    <pre>
       <?php 
-         var_dump($paragraph);
+         echo strlen($paragraph) . " " . $paragraph;
       ?>
    </pre>
    <pre>
       <?php 
-         var_dump($replacedParagraph);
+         echo strlen($replacedParagraph) . " " . $replacedParagraph;
       ?>
    </pre>
 </body>
